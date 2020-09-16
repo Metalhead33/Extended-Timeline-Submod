@@ -1,0 +1,91 @@
+#Birth of Shinto 
+province_event = {
+
+	id = et.20
+	title = "et.EVTNAME20"
+	desc = "et.EVTDESC20"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		region = japan_region
+		NOT = { religion = shinto }
+		NOT = { religion_group = christian }
+		NOT = { religion_group = muslim }
+		NOT = { religion_group = jewish_group }
+		NOT = { has_global_flag = shinto_rebirth }
+		culture_group = japanese_g
+		is_year = 712
+		NOT = { started_in = 712.1.1 }
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		set_global_flag = shinto_rebirth
+	}
+	
+	option = {
+		name = "et.EVTOPTA20"
+		change_religion = shinto
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 3650
+		}
+	}
+}
+
+#Spread of Shinto 
+province_event = {
+
+	id = et.21
+	title = "et.EVTNAME21"
+	desc = "et.EVTDESC21"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	trigger = {
+		region = japan_region
+		OR = {
+			started_in = 712.1.1
+			has_global_flag = shinto_rebirth
+		}
+		culture_group = japanese_g
+		NOT = { religion = shinto }
+		NOT = { religion_group = christian }
+		NOT = { religion_group = muslim }
+		NOT = { religion_group = jewish_group }
+		is_year = 700
+		NOT = { is_year = 1000 }
+	}
+	mean_time_to_happen = {
+		months = 1000
+
+		modifier = {
+			factor = 0.8
+			religion = animism
+		}
+		modifier = {
+			factor = 0.8
+			owner = { religion = animism }
+		}
+		modifier = {
+			factor = 0.7
+			is_year = 800
+		}
+		modifier = {
+			factor = 0.7
+			any_neighbor_province = { religion = shinto }
+		}
+	}
+	
+	option = {
+		name = "et.EVTOPTA21"
+		change_religion = shinto
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 3650
+		}
+	}
+}

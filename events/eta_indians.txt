@@ -1,0 +1,160 @@
+namespace = eta
+
+# Cholas
+country_event = {
+
+	id = eta.12
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		india_superregion = {
+			discover_country = ROOT
+		}
+		east_indies_superregion = {
+			discover_country = ROOT
+		}
+		oceania_superregion = {
+			discover_country = ROOT
+		}
+		china_superregion = {
+			discover_country = ROOT
+		}
+		persia_superregion = {
+			discover_country = ROOT
+		}
+		near_east_superregion = {
+			discover_country = ROOT
+		}
+		africa_superregion = {
+			discover_country = ROOT
+		}
+		malaya_region = {
+			limit = {
+				is_empty = yes
+				has_port = yes
+			}
+			change_religion = ROOT
+			if = {
+			limit = { NOT = { native_size = 1 } }
+			change_culture = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		malaya_region = {
+			limit = {
+				is_empty = no
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		moluccas_region = {
+			limit = {
+				is_empty = yes
+				has_port = yes
+			}
+			change_religion = ROOT
+			if = {
+			limit = { NOT = { native_size = 1 } }
+			change_culture = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		moluccas_region = {
+			limit = {
+				is_empty = no
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		indonesia_region = {
+			limit = {
+				is_empty = yes
+				has_port = yes
+			}
+			change_religion = ROOT
+			if = {
+			limit = { NOT = { native_size = 1 } }
+			change_culture = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		indonesia_region = {
+			limit = {
+				is_empty = no
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		horn_of_africa_region = {
+			limit = {
+				is_empty = yes
+				has_port = yes
+			}
+			change_religion = ROOT
+			if = {
+			limit = { NOT = { native_size = 1 } }
+			change_culture = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		horn_of_africa_region = {
+			limit = {
+				is_empty = no
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		east_africa_region = {
+			limit = {
+				is_empty = yes
+				has_port = yes
+			}
+			change_religion = ROOT
+			if = {
+			limit = { NOT = { native_size = 1 } }
+			change_culture = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		east_africa_region = {
+			limit = {
+				is_empty = no
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		arabia_region = {
+			limit = {
+				is_empty = yes
+				has_port = yes
+			}
+			change_religion = ROOT
+			if = {
+			limit = { NOT = { native_size = 1 } }
+			change_culture = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		arabia_region = {
+			limit = {
+				is_empty = no
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+	}
+}

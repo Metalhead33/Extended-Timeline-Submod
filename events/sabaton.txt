@@ -1,0 +1,73 @@
+namespace = sabaton
+
+country_event = {
+	id = sabaton.1
+	
+	is_triggered_only = yes
+
+	title = "sabaton.1.t"
+	desc = "sabaton.1.d"
+	picture = HRE_eventPicture
+
+	
+	option = {
+		name = "sabaton.1.a"
+		add_country_modifier = { 
+		name = quickbuild
+		duration = -1  
+		desc = PROPER_OLD_WAYS_DESC_TOOLTIP
+		hidden = yes
+		}
+	}
+}
+country_event = {
+	id = sabaton.2
+	
+	is_triggered_only = yes
+
+	title = "sabaton.2.t"
+	desc = "sabaton.2.d"
+	picture = BUDDHA_eventPicture
+
+	
+	option = {
+		name = "sabaton.2.a"
+		remove_country_modifier = quickbuild
+	}
+}
+
+country_event = {
+	id = sabaton.3
+	
+	is_triggered_only = yes
+
+	title = "sabaton.1.t"
+	desc = "sabaton.1.d"
+	picture = HRE_eventPicture
+
+	
+	option = {
+		name = "sabaton.1.a"
+		add_country_modifier = { 
+		name = roman_cheat
+		duration = -1  
+		desc = PROPER_OLD_WAYS_DESC_TOOLTIP
+		hidden = yes
+		}
+	}
+}
+country_event = {
+	id = sabaton.4
+	
+	is_triggered_only = yes
+
+	title = "sabaton.2.t"
+	desc = "sabaton.2.d"
+	picture = BUDDHA_eventPicture
+
+	
+	option = {
+		name = "sabaton.2.a"
+		remove_country_modifier = roman_cheat
+	}
+}

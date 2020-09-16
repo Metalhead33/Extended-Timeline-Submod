@@ -1,0 +1,193 @@
+namespace = eta
+
+#Spread of Christianity to Japan - Nestorian
+# Introducing Christianity to Japan
+province_event = {
+
+	id = eta.1
+	title = "eta.EVTNAME1"
+	desc = "eta.EVTDESC1"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	trigger = {
+		region = japan_region
+		NOT = { religion = mahayana }
+		NOT = { religion_group = christian }
+		NOT = { religion_group = muslim }
+		NOT = { religion_group = jewish_group }
+		is_year = 635
+		NOT = { is_year = 950 }
+		OR = {
+			NOT = { religion = confucianism }
+			owner = { NOT = { religion = confucianism } }
+		}
+	}
+	mean_time_to_happen = {
+		months = 800
+
+		modifier = {
+			factor = 0.8
+			is_year = 650
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = { religion = nestorian }
+		}
+	}
+	
+	option = {
+		name = "eta.EVTOPTA1"
+		change_religion = nestorian
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 3650
+		}
+	}
+} 
+
+#The Arrival of the Nestorians
+country_event = {
+	id = eta.2
+	title = "eta.EVTNAME2"
+	desc = "eta.EVTDESC2"
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_emperor_of_china = yes
+		
+		NOT = { religion_group = christian }
+		NOT = { religion_group = muslim }
+		NOT = { religion_group = jewish_group }
+		num_of_ports = 1
+		is_year = 635
+		NOT = { is_year = 950 }
+		
+
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "eta.EVTOPTA2" #Yes, we may benefit from their learning
+		set_country_flag = china_accepted_nestorians
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				is_reformation_center = no
+			}
+			change_religion = nestorian
+			add_permanent_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 7300
+			}
+			if = {
+				limit = { NOT = { manorialism = 100 } }
+				add_institution_embracement = {
+					which = manorialism
+					value = 100
+				}
+			}
+		}
+		near_east_superregion = {
+			limit = {
+				is_empty = no
+			}
+			discover_country = ROOT
+		}
+		persia_superregion = {
+			limit = {
+				is_empty = no
+			}
+			discover_country = ROOT
+		}
+		balkan_region = {
+			limit = {
+				is_empty = no
+			}
+			discover_country = ROOT
+		}
+		add_dip_power = 100
+		add_mil_power = 100
+		add_adm_power = 100
+		every_known_country = {
+			limit = {
+				religion = nestorian
+				has_discovered = ROOT
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_accepted_nestorians
+			}
+		}
+	}
+	option = {
+		name = "eta.EVTOPTB2"
+		add_stability_or_adm_power = yes
+	}
+}
+
+Christian World
+country_event = {
+
+	id = eta.3
+	title = "eta.EVTNAME3"
+	desc = "eta.EVTDESC3"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		every_province = {
+			limit = {
+				continent = africa
+			}
+			change_religion = coptic
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 7650
+			}
+		}
+		every_province = {
+			limit = {
+				continent = europe
+			}
+			change_religion = chalcedonism
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 7650
+			}
+		}
+		every_province = {
+			limit = {
+				continent = asia
+			}
+			change_religion = nestorian
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 7650
+			}
+		}
+		every_province = {
+			limit = {
+				OR = {
+				continent = north_america
+				continent = south_america
+				continent = oceania				
+				}
+			}
+			change_religion = arianism
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 7650
+			}
+		}
+	}
+	}
+}

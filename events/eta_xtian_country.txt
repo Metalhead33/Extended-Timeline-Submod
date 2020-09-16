@@ -1,0 +1,217 @@
+namespace = eta
+
+# Christian Country - Chalcedonian
+country_event = {
+
+	id = eta.18
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		india_superregion = {
+			discover_country = ROOT
+		}
+		europe_superregion = {
+			discover_country = ROOT
+		}
+		eastern_europe_superregion = {
+			discover_country = ROOT
+		}
+		near_east_superregion = {
+			discover_country = ROOT
+		}
+		persia_superregion = {
+			discover_country = ROOT
+		}
+		egypt_region = {
+			discover_country = ROOT
+		}
+		north_european_sea_superregion = {
+			discover_country = ROOT
+		}
+		south_european_sea_superregion = {
+			discover_country = ROOT
+		}
+		east_african_sea_superregion = {
+			discover_country = ROOT
+		}
+		indian_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		north_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		every_owned_province = {
+			change_religion = chalcedonism
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 7650
+			}
+		}
+		change_religion = chalcedonism
+	}
+	}
+}
+
+# Christian Country - Nestorian
+country_event = {
+
+	id = eta.19
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		every_owned_province = {
+			change_religion = nestorian
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 7650
+			}
+		}
+		change_religion = nestorian
+	}
+	}
+}
+
+
+# Christian Country - Protestant
+country_event = {
+
+	id = eta.20
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		every_owned_province = {
+			change_religion = protestant
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 7650
+			}
+		}
+		change_religion = protestant
+	}
+	}
+}
+
+# Christian Country - Muslim
+country_event = {
+
+	id = eta.21
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		every_owned_province = {
+			change_religion = sunni
+		}
+		change_religion = sunni
+	}
+	}
+}
+
+
+# Just Discover Places
+country_event = {
+
+	id = eta.22
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		india_superregion = {
+			discover_country = ROOT
+		}
+		europe_superregion = {
+			discover_country = ROOT
+		}
+		eastern_europe_superregion = {
+			discover_country = ROOT
+		}
+		near_east_superregion = {
+			discover_country = ROOT
+		}
+		persia_superregion = {
+			discover_country = ROOT
+		}
+		egypt_region = {
+			discover_country = ROOT
+		}
+		north_european_sea_superregion = {
+			discover_country = ROOT
+		}
+		south_european_sea_superregion = {
+			discover_country = ROOT
+		}
+		east_african_sea_superregion = {
+			discover_country = ROOT
+		}
+		indian_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		north_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		north_america_superregion = {
+			discover_country = ROOT
+		}
+		central_america_superregion = {
+			discover_country = ROOT
+		}
+		south_america_superregion = {
+			discover_country = ROOT
+		}
+		caribbean_sea_region = {
+			discover_country = ROOT
+		}
+		atlantic_south_america_region = {
+			discover_country = ROOT
+		}
+		american_east_coast_region = {
+			discover_country = ROOT
+		}
+		south_atlantic_region = {
+			discover_country = ROOT
+		}
+		north_atlantic_region = {
+			discover_country = ROOT
+		}
+		british_isles_region = {
+			discover_country = ROOT
+		}
+		africa_superregion = {
+			discover_country = ROOT
+		}
+	}
+	}
+}

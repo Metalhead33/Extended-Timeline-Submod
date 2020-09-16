@@ -1,0 +1,78 @@
+namespace = eta
+
+# Ottomans annex Mamluks
+country_event = {
+
+	id = eta.10
+	title = "eta.EVTNAME10"
+	desc = "eta.EVTDESC10"
+	picture = MILITARY_CAMP_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		# MAM = { ai = yes }
+		tag = TUR
+		war_with = MAM
+		controls = 361
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		white_peace = MAM
+		inherit = MAM
+		add_prestige = 25
+		add_adm_power = -100
+		egypt_region = {
+			limit = {
+				NOT = { owned_by = TUR }
+				is_empty = no
+			}
+			add_permanent_claim = TUR
+		}
+		maghreb_region = {
+			limit = {
+				NOT = { owned_by = TUR }
+				is_empty = no
+			}
+			add_permanent_claim = TUR
+		}
+		mashriq_region = {
+			limit = {
+				NOT = { owned_by = TUR }
+				is_empty = no
+			}
+			add_permanent_claim = TUR
+		}
+		anatolia_region = {
+			limit = {
+				NOT = { owned_by = TUR }
+				is_empty = no
+			}
+			add_permanent_claim = TUR
+		}
+		arabia_region = {
+			limit = {
+				NOT = { owned_by = TUR }
+				is_empty = no
+			}
+			add_permanent_claim = TUR
+		}
+		iraq_e_ajam_area = {
+			limit = {
+				NOT = { owned_by = TUR }
+				is_empty = no
+			}
+			add_permanent_claim = TUR
+		}
+		south_kurdistan_area = {
+			limit = {
+				NOT = { owned_by = TUR }
+				is_empty = no
+			}
+			add_permanent_claim = TUR
+		}
+	}
+} 

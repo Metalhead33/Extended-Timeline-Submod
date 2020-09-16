@@ -1,0 +1,30 @@
+### Quickbuild ###
+quickbuild = {
+	build_time = -0.99
+	build_cost = -0.99
+	global_regiment_cost = -0.99
+	global_ship_cost = -0.99
+	global_regiment_recruit_speed = -0.99
+	global_ship_recruit_speed = -0.99
+}
+
+roman_cheat = {
+	diplomats = 2
+	global_unrest = -4
+	religious_unity = 0.25
+	global_regiment_recruit_speed = -0.99
+	tolerance_own = 2
+	tolerance_heretic = 2
+	tolerance_heathen = 2
+	colonists = 4
+	colonist_placement_chance = 0.2
+	global_colonial_growth = 100
+	range = 2.0
+	native_uprising_chance = -0.75
+	expel_minorities_cost = -2.0
+	merchants = 4
+	placed_merchant_power = 3
+	global_own_trade_power = 1.5
+	cb_on_primitives = yes
+	may_explore = yes
+}

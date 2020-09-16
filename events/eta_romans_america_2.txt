@@ -1,0 +1,592 @@
+namespace = eta
+
+# Roman America
+country_event = {
+
+	id = eta.13
+	title = "eta.EVTNAME11"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		north_america_superregion = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		central_america_superregion = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		south_america_superregion = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		caribbean_sea_region = {
+			discover_country = ROOT
+		}
+		atlantic_south_america_region = {
+			discover_country = ROOT
+		}
+		american_east_coast_region = {
+			discover_country = ROOT
+		}
+		south_atlantic_region = {
+			discover_country = ROOT
+		}
+		north_atlantic_region = {
+			discover_country = ROOT
+		}
+		egypt_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		maghreb_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		mashriq_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		anatolia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		arabia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		horn_of_africa_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		france_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		italy_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		iberia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		british_isles_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		carpathia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		caucasia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		crimea_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		balkan_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		persia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		sahel_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		niger_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		guinea_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+	}
+}
+
+
+# Roman Straya
+country_event = {
+
+	id = eta.14
+	title = "eta.EVTNAME11"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		oceania_superregion = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		indian_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		west_american_sea_superregion = {
+			discover_country = ROOT
+		}
+	}
+	}
+}
+
+
+# Roman Sub-Saharan Africa
+country_event = {
+
+	id = eta.15
+	title = "eta.EVTNAME11"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		africa_superregion = {
+			discover_country = ROOT
+		}
+		west_african_sea_superregion = {
+			discover_country = ROOT
+		}
+		east_african_sea_superregion = {
+			discover_country = ROOT
+		}
+		north_european_sea_superregion = {
+			discover_country = ROOT
+		}
+		east_american_sea_superregion = {
+			discover_country = ROOT
+		}
+		west_american_sea_superregion = {
+			discover_country = ROOT
+		}
+		indian_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		north_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		central_africa_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		horn_of_africa_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		kongo_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		east_africa_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		guinea_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		niger_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+	}
+}
+
+# Roman South Africa
+country_event = {
+
+	id = eta.16
+	title = "eta.EVTNAME11"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		north_america_superregion = {
+			discover_country = ROOT
+		}
+		central_america_superregion = {
+			discover_country = ROOT
+		}
+		south_america_superregion = {
+			discover_country = ROOT
+		}
+		hudson_bay_region = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		canada_region = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+	}
+}
+
+
+# Roman Canada
+country_event = {
+
+	id = eta.17
+	title = "eta.EVTNAME11"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		south_africa_region = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+	}
+}
