@@ -144,48 +144,100 @@ country_event = {
 	option = {
 		name = "eta.EVTOPTA10"
 		hidden_effect = {
-		every_province = {
-			limit = {
-				continent = africa
-			}
+		africa = {
 			change_religion = coptic
 			add_province_modifier = {
 				name = "religious_zeal_at_conv"
-				duration = 7650
+				duration = 14650
+			}
+			if = {
+				limit = {
+					is_empty = no
+				}
+				add_institution_embracement = {
+					which = organized_religion
+					value = 100
+				}
 			}
 		}
-		every_province = {
-			limit = {
-				continent = europe
-			}
+		europe = {
 			change_religion = chalcedonism
 			add_province_modifier = {
 				name = "religious_zeal_at_conv"
-				duration = 7650
+				duration = 14650
 			}
-		}
-		every_province = {
-			limit = {
-				continent = asia
-			}
-			change_religion = nestorian
-			add_province_modifier = {
-				name = "religious_zeal_at_conv"
-				duration = 7650
-			}
-		}
-		every_province = {
-			limit = {
-				OR = {
-				continent = north_america
-				continent = south_america
-				continent = oceania				
+			if = {
+				limit = {
+					is_empty = no
+				}
+				add_institution_embracement = {
+					which = organized_religion
+					value = 100
 				}
 			}
+		}
+		asia = {
+			change_religion = chalcedonism
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 14650
+			}
+			if = {
+				limit = {
+					is_empty = no
+				}
+				add_institution_embracement = {
+					which = organized_religion
+					value = 100
+				}
+			}
+		}
+		north_america = {
 			change_religion = arianism
 			add_province_modifier = {
 				name = "religious_zeal_at_conv"
-				duration = 7650
+				duration = 14650
+			}
+			if = {
+				limit = {
+					is_empty = no
+				}
+				add_institution_embracement = {
+					which = organized_religion
+					value = 100
+				}
+			}
+		}
+		south_america = {
+			change_religion = arianism
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 14650
+			}
+			if = {
+				limit = {
+					is_empty = no
+				}
+				add_institution_embracement = {
+					which = organized_religion
+					value = 100
+				}
+			}
+		}
+		oceania = {
+			change_religion = arianism
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 14650
+			}
+			if = {
+				limit = {
+					is_empty = no
+				}
+				add_institution_embracement = {
+					which = organized_religion
+					value = 100
+				}
 			}
 		}
 	}
