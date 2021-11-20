@@ -1,0 +1,1610 @@
+namespace = eta_trolling
+# a
+# Roman America
+country_event = {
+
+	id = eta_trolling.1
+	title = "eta.EVTNAME11"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		north_america_superregion = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		central_america_superregion = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		south_america_superregion = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		caribbean_sea_region = {
+			discover_country = ROOT
+		}
+		atlantic_south_america_region = {
+			discover_country = ROOT
+		}
+		american_east_coast_region = {
+			discover_country = ROOT
+		}
+		south_atlantic_region = {
+			discover_country = ROOT
+		}
+		north_atlantic_region = {
+			discover_country = ROOT
+		}
+		egypt_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		maghreb_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		mashriq_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		anatolia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		arabia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		horn_of_africa_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		france_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		italy_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		iberia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		british_isles_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		carpathia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		caucasia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		crimea_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		balkan_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		persia_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		sahel_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		niger_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		guinea_region = {
+			if = {
+			limit = { 
+				is_empty = yes
+				NOT = { native_size = 1 } 
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			discover_country = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+	}
+}
+
+
+# Roman Straya
+country_event = {
+
+	id = eta_trolling.2
+	title = "eta.EVTNAME11"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		oceania_superregion = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		indian_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		west_american_sea_superregion = {
+			discover_country = ROOT
+		}
+	}
+	}
+}
+
+
+# Roman Sub-Saharan Africa
+country_event = {
+
+	id = eta_trolling.3
+	title = "eta.EVTNAME11"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		africa_superregion = {
+			discover_country = ROOT
+		}
+		west_african_sea_superregion = {
+			discover_country = ROOT
+		}
+		east_african_sea_superregion = {
+			discover_country = ROOT
+		}
+		north_european_sea_superregion = {
+			discover_country = ROOT
+		}
+		east_american_sea_superregion = {
+			discover_country = ROOT
+		}
+		west_american_sea_superregion = {
+			discover_country = ROOT
+		}
+		indian_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		north_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		central_africa_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		horn_of_africa_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		kongo_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		east_africa_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		guinea_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		niger_region = {
+			if = {
+			limit = { 
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 }
+					}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+	}
+}
+
+# Roman South Africa
+country_event = {
+
+	id = eta_trolling.4
+	title = "eta.EVTNAME11"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		north_america_superregion = {
+			discover_country = ROOT
+		}
+		central_america_superregion = {
+			discover_country = ROOT
+		}
+		south_america_superregion = {
+			discover_country = ROOT
+		}
+		hudson_bay_region = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		canada_region = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+	}
+}
+
+
+# Roman Canada
+country_event = {
+
+	id = eta_trolling.5
+	title = "eta.EVTNAME11"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		south_africa_region = {
+			discover_country = ROOT
+			if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_empty = yes
+						NOT = { native_size = 1 } 
+					}
+					has_port = yes
+				}
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+	}
+}
+
+# Hungarian Hungary
+country_event = {
+
+	id = eta_trolling.6
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		change_technology_group = western
+		change_unit_type = eastern
+		add_government_reform = feudalism_reform
+		transylvania_area = {
+			discover_country = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_base_tax = 10
+			add_base_production = 15
+			add_base_manpower = 10
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+		southern_transylvania_area = {
+			discover_country = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_base_tax = 10
+			add_base_production = 15
+			add_base_manpower = 10
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+		slovakia_area = {
+			discover_country = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_base_tax = 10
+			add_base_production = 15
+			add_base_manpower = 10
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+		alfold_area = {
+			discover_country = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_base_tax = 10
+			add_base_production = 15
+			add_base_manpower = 10
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+		vojvodina_area = {
+			discover_country = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_base_tax = 10
+			add_base_production = 15
+			add_base_manpower = 10
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+		transdanubia_area = {
+			discover_country = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_base_tax = 10
+			add_base_production = 15
+			add_base_manpower = 10
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+		east_adriatic_coast_area = {
+			discover_country = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_base_tax = 10
+			add_base_production = 15
+			add_base_manpower = 10
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+		croatia_area = {
+			discover_country = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_base_tax = 10
+			add_base_production = 15
+			add_base_manpower = 10
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+		slavonia_area = {
+			discover_country = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_base_tax = 10
+			add_base_production = 15
+			add_base_manpower = 10
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Discover Asia
+country_event = {
+
+	id = eta_trolling.7
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		tartary_superregion = {
+			discover_country = ROOT
+		}
+		far_east_superregion = {
+			discover_country = ROOT
+		}
+		oceania_superregion = {
+			discover_country = ROOT
+		}
+		east_indies_superregion = {
+			discover_country = ROOT
+		}
+		north_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		indian_pacific_sea_superregion = {
+			discover_country = ROOT
+		}
+		north_east_pacific_region = {
+			discover_country = ROOT
+		}
+		south_east_pacific_region = {
+			discover_country = ROOT
+		}
+	}
+}
+
+# Colonize Australia
+country_event = {
+
+	id = eta_trolling.8
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		australia_region = {
+			discover_country = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 3650
+			}
+		}
+	}
+}
+# Islamic Expansion
+country_event = {
+
+	id = eta_trolling.9
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		burma_region = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+		bengal_region = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+		hindusthan_region = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+		west_india_region = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+		maghreb_region = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+		horn_of_africa_region = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+		sahel_region = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+		mashriq_region = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+		arabia_region = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+		egypt_region = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+		persia_superregion = {
+			discover_country = ROOT
+			if = {
+			limit = {
+				is_empty = no
+			}
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+			}
+		}
+	}
+}
+
+# Japanese expansion
+country_event = {
+
+	id = eta_trolling.10
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		japan_region = {
+			discover_country = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+		}
+		korea_region = {
+			discover_country = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+		}
+		manchuria_region = {
+			discover_country = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+		}
+		east_siberia_region = {
+			discover_country = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+		}
+		moluccas_region = {
+			discover_country = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			add_core = ROOT
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+		}
+		taiwan_area = {
+			discover_country = ROOT
+			change_religion = ROOT
+			cede_province = ROOT
+			change_culture = ROOT
+			add_core = ROOT
+			add_next_institution_embracement = 100
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 6650
+			}
+		}
+	}
+}
+# Random America
+country_event = {
+
+	id = eta_trolling.11
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		CTV = {
+			change_technology_group = western
+			change_unit_type = western
+			change_religion = chalcedonism
+			add_government_reform = merchants_reform
+			maryland_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 10
+					add_base_production = 15
+					add_base_manpower = 10
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+		}
+		ETR = {
+			change_technology_group = western
+			change_unit_type = western
+			change_religion = chalcedonism
+			florida_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 3
+					add_base_production = 5
+					add_base_manpower = 3
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+		}
+		GAE = {
+			change_religion = chalcedonism
+			change_technology_group = western
+			change_unit_type = western
+			bahia_blanca_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			patagonia_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+		}
+		ICN = {
+			change_technology_group = western
+			change_unit_type = western
+			change_religion = chalcedonism
+			add_government_reform = merchants_reform
+			connecticut_valley_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			new_york_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+		}
+		CRL = {
+			change_technology_group = western
+			change_unit_type = western
+			change_religion = chalcedonism
+			add_government_reform = feudalism_reform
+			carolinas_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			south_carolina_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			south_carolina_piedmont_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			american_georgia_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+		}
+		MRN = {
+			change_technology_group = western
+			change_unit_type = western
+			change_religion = chalcedonism
+			add_government_reform = merchants_reform
+			carribeans_region = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+		}
+		VAS = {
+			change_technology_group = western
+			change_unit_type = western
+			change_religion = chalcedonism
+			add_government_reform = feudalism_reform
+			colombia_region = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+		}
+		CRS = {
+			change_technology_group = western
+			change_unit_type = western
+			change_religion = chalcedonism
+			add_government_reform = feudalism_reform
+			southern_pampas_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			banda_oriental_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			rio_grande_do_sol_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+		}
+		CTV = {
+			change_technology_group = western
+			change_unit_type = western
+			change_religion = chalcedonism
+			add_government_reform = feudalism_reform
+			amapa_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			grao_para_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			maranhao_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+		}
+		VOT = {
+			change_technology_group = western
+			change_unit_type = western
+			change_religion = chalcedonism
+			add_government_reform = feudalism_reform
+			pernambuco_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			bahia_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			diamantina_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+			minas_gerais_area = {
+				if = {
+					limit = { 
+						is_empty = yes
+					}
+					cede_province = PREV
+					add_core = PREV
+					discover_country = PREV
+					change_religion = PREV
+					change_culture = PREV
+					add_next_institution_embracement = 100
+					add_base_tax = 2
+					add_base_production = 4
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "religious_zeal_at_conv"
+						duration = 6650
+					}
+				}
+			}
+		}
+	}
+}

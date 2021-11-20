@@ -24,14 +24,7 @@ writing = {
 			}
 			AND = {
 				is_year = 200
-				owner = {
-				OR = { # Only the Mayans developed writing
-				religion = mesoamerican_religion
-				NOT = { religion_group = american_pagan } 
-				}
-				NOT = { religion = shamanism } # Sub-Saharan Africans never developed writing
-				NOT = { religion_group = slavic_pagan } # Slavs, Balts and Finns never developed writing on their own
-				}
+				always = yes
 			}
 		}
 	}
@@ -165,7 +158,7 @@ legalism = {
 	trade_company_efficiency = 0.0
 	
 	historical_start_date = 1500.1.1
-	historical_start_province = 2492 #Luoyang
+	historical_start_province = 1836 #Luoyang
 
 	history = {
 		OR = {
@@ -191,6 +184,10 @@ legalism = {
 					NOT = { government = tribal }
 					NOT = { government = native }
 				}
+			}
+			AND = {
+				is_year = 300
+				always = yes
 			}
 		}
 	}
@@ -395,23 +392,11 @@ ancient_imperialism = {
 			}
 			AND = {
 				is_year = 300
-				owner = { 
-				OR = {
-				government_rank = 3
-				tag = AZT
-				tag = INC
-				}
-				}
+				owner = { government_rank = 3 }
 			}
 			AND = {
 				is_year = 390
-				owner = {
-				NOT = { religion_group = american_pagan } 
-				NOT = { religion_group = slavic_pagan }
-				NOT = { religion_group = german_pagan }
-				NOT = { religion = shamanism }
-				NOT = { religion = druidism }
-				}
+				always = yes
 			}
 		}
 	}
@@ -597,9 +582,6 @@ caste_system = {
 
 	history = {
 		OR = {
-			owner = { 
-			has_institution = serfdom
-			}
 			AND = {
 				is_year = 300
 				culture = bihari
@@ -621,28 +603,14 @@ caste_system = {
 				}
 			}
 			AND = {
-				is_year = 450
-			}
-			AND = {
 				is_year = 500
-				OR = {
-				superregion = india_superregion
-				owner = {
-				OR = {
-					religion_group = buddhic
-					religion_group = dharmic
-					religion_group = eastern
-					religion_group = jewish_group
-				}
-				}
-				}
+				always = yes
 			}
 		}
 	}
 	
 	can_start = {
 		is_year = 300
-		superregion = india_superregion
 		
 		is_island = no
 		is_state = yes
@@ -1067,9 +1035,7 @@ serfdom = {
 			}
 			AND = {
 				is_year = 800
-				owner = { 
-				has_institution = early_feudalism
-				}
+				always = yes
 			}
 		}
 	}
@@ -1215,7 +1181,7 @@ manorialism = {
 	trade_company_efficiency = 0.0
 	
 	historical_start_date = 600.1.1
-	historical_start_province = 2598 #Narbonne
+	historical_start_province = 2753 #Narbonne
 
 	history = {
 		OR = {
@@ -1235,10 +1201,8 @@ manorialism = {
 				}
 			}
 			AND = {
-				is_year = 800
-				owner = { 
-				has_institution = early_feudalism
-				}
+				is_year = 900
+				always = yes
 			}
 		}
 	}
@@ -1435,10 +1399,7 @@ early_feudalism = {
 			}
 			AND = {
 				is_year = 1000
-				NOT = { superregion = north_america_superregion }
-				NOT = { superregion = andes_superregion }
-				NOT = { superregion = central_america_superregion }
-				NOT = { superregion = south_america_superregion }
+				always = yes
 			}
 		}
 	}
@@ -1644,6 +1605,10 @@ crop_rotation = {
 					NOT = { government = native }
 				}
 			}
+			AND = {
+				is_year = 1000
+				always = yes
+			}
 		}
 	}
 	
@@ -1801,6 +1766,10 @@ civil_service = {
 					NOT = { government = native }
 				}
 			}
+			AND = {
+				is_year = 1100
+				always = yes
+			}
 		}
 	}
 	
@@ -1950,8 +1919,6 @@ manuscripts = {
 	historical_start_province = 183 #Paris
 
 	history = {
-		AND = {
-		owner = { has_institution = writing }
 		OR = {
 			AND = {
 				is_year = 1000
@@ -1987,7 +1954,6 @@ manuscripts = {
 				always = yes
 			}
 		}
-		}
 	}
 	
 	can_start = {
@@ -2016,12 +1982,6 @@ manuscripts = {
 
 	
 	embracement_speed = {
-		modifier = {
-		factor = -1
-		NOT = { 
-		owner = { has_institution = writing }
-		}
-		}
 		modifier = {
 			factor = 0.1
 			scale = yes
@@ -2178,6 +2138,10 @@ scholasticism = {
 					NOT = { government = tribal }
 					NOT = { government = native }
 				}
+			}
+			AND = {
+				is_year = 1300
+				always = yes
 			}
 		}
 	}
@@ -2365,6 +2329,10 @@ guilds = {
 					NOT = { government = native }
 				}
 			}
+			AND = {
+				is_year = 1400
+				always = yes
+			}
 		}
 	}
 	
@@ -2542,6 +2510,7 @@ medicine = {
 					NOT = { government = native }
 				}
 			}
+			is_year = 1440
 		}
 	}
 	

@@ -1,5 +1,5 @@
 namespace = eta
-
+# a
 # Christian Country - Chalcedonian
 country_event = {
 
@@ -212,6 +212,28 @@ country_event = {
 		africa_superregion = {
 			discover_country = ROOT
 		}
+	}
+	}
+}
+
+# Christian Country - Muslim
+country_event = {
+
+	id = eta.23
+	title = "eta.EVTNAME12"
+	desc = "eta.EVTDESC1"
+	picture = RELIGION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "eta.EVTOPTA10"
+		hidden_effect = {
+		every_owned_province = {
+			change_religion = islam
+		}
+		change_religion = islam
 	}
 	}
 }
