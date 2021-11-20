@@ -1008,6 +1008,7 @@ serfdom = {
 		production_efficiency = 0.1
 		governing_capacity = 25
 		infantry_cost = -0.2
+		siege_ability = 0.2
 		global_manpower_modifier = 0.2
 	}
 	
@@ -1175,6 +1176,8 @@ manorialism = {
 
 	bonus = {
 		vassal_forcelimit_bonus = 0.1
+		fort_level = 1
+		siege_ability = 0.1
 		governing_capacity = 25
 	}
 	
